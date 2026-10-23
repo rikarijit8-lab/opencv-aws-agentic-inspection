@@ -5,6 +5,8 @@
 [![Track: Agentic Vision](https://img.shields.io/badge/Award%20Path-Agentic%20Vision-brightgreen.svg)]()
 [![Track: Best Use of COOL](https://img.shields.io/badge/Award%20Path-Best%20Use%20of%20COOL%20(Graviton)-yellow.svg)]()
 
+![Project Master Thumbnail](thumbnail.png)
+
 > **Submission for the OpenCV AI Competition 2026, powered by AWS**  
 > *Targeting the Grand Prize, the Agentic Vision Award, and the Best Use of COOL Award.*
 
