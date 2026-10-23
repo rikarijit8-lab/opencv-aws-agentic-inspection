@@ -8,6 +8,9 @@
 > **Submission for the OpenCV AI Competition 2026, powered by AWS**  
 > *Targeting the Grand Prize, the Agentic Vision Award, and the Best Use of COOL Award.*
 
+🎥 **Live Judge Demonstration Video (3-Minute Real Screencast)**: [`real_web_demo_3min.mp4`](real_web_demo_3min.mp4)  
+🎙️ **Bilingual Voiceover Presentation Guide**: [`VIDEO_SCRIPT.md`](VIDEO_SCRIPT.md)
+
 ---
 
 ## 📌 Executive Summary & Problem Statement

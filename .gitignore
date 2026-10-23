@@ -9,6 +9,7 @@ __pycache__/
 *.so
 .pytest_cache/
 
-# Streamlit
+# Streamlit & Temp Records
 .streamlit/
+recorded_demo/
 
