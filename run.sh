@@ -5,3 +5,4 @@ echo "Launching Autonomous Closed-Loop Inspection System..."
 echo "========================================================"
 
 python3 -m streamlit run app.py
+
