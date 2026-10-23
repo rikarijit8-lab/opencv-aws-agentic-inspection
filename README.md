@@ -167,6 +167,27 @@ nohup streamlit run app.py --server.port 80 --server.address 0.0.0.0 > app.log 2
 
 ---
 
+## 👥 Target Users & Beneficiaries
+- **Quality Control Engineers**: Receive instant sub-pixel defect metrics, reducing manual optical inspection fatigue.
+- **Manufacturing Plant Operators**: Benefit from autonomous physical conveyor routing (`PASS`, `REWORK`, `EMERGENCY_HALT`).
+- **Plant Reliability Leadership**: Enterprise-wide observability via AWS CloudWatch dashboards in Sydney (`ap-southeast-2`).
+
+---
+
+## ⚠️ System Limitations & Failure Handling
+- **Optical Saturation Limit**: Complete extreme camera washout (>95% pure white illumination) cannot be recovered by CLAHE; in this event, the agent flags an optical sensor failure and requests inspection station recalibration.
+- **Re-calibration Loop Safeguard**: To prevent endless recursion, the agent limits closed-loop optical re-tuning to a maximum of **two iterative passes** before safely routing the workpiece to human expert review.
+- **Network Variance & Offline Resilience**: If AWS CloudWatch connectivity is interrupted, the agent safely buffers audit records locally in memory and disk without slowing down high-speed physical inspection lines.
+
+---
+
+## 🛡️ Responsible-Use, Safety & Human Control Considerations
+- **Human-in-the-Loop Interlocks**: When an `EMERGENCY_HALT` is commanded due to a severe structural fracture (>1200 px), restarting the conveyor belt requires physical human operator clearance.
+- **Data Privacy & Industrial Security**: Workpiece inspection images are processed deterministically on-premise/in-VPC. AWS credentials are strictly loaded via environment variables and never logged or exposed.
+- **Ethical AI Automation**: This system is designed as an assistive tool to augment factory worker safety and prevent hazardous component failures in mission-critical industries.
+
+---
+
 ## 👥 Team & Submission Information
 - **Team**: VEDA QME-AI
 - **Event**: OpenCV AI Competition 2026, powered by AWS
